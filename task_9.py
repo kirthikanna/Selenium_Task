@@ -9,9 +9,6 @@ class WebpageScraper:#A class to represent a webpage scraper using selenium
         self.driver = None
 
     def setup_driver(self):
-        """
-        Sets up the Chrome WebDriver using Selenium WebDriver Manager.
-        """
         # Use WebDriver Manager to install and manage the WebDriver
         self.driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
